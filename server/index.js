@@ -24,9 +24,7 @@ const connect = mongoose.connect(config.mongoURI,
   .catch(err => console.log(err));
 
 app.use(cors())
-app.get('/',(req,res) => {
-  res.json({ "hello": "hii" })
-})
+
 //to not get any deprecation warning or error
 //support parsing of application/x-www-form-urlencoded post data
 app.use(bodyParser.urlencoded({ extended: true }));
