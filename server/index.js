@@ -43,7 +43,7 @@ app.use('/uploads', express.static('uploads'));
 // Serve static assets if in production
 if (process.env.NODE_ENV === "production") {
   app.get('/',(req,res) => {
-    res.json({ "hello": "hii" })
+    res.json({ "hello": "col" })
   })
   // Set static folder   
   // All the javascript and css files will be read and served from this folder
